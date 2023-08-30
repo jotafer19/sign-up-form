@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+@font-face {
+    font-family: Norse-Bold;
+    src: url(./fonts/Norse-Bold.otf);
+}
+
+:root {
+    box-sizing: border-box;
+    --button-color: #596D48;
+    --button-secondary-color: #3d4c2f;
+    --border-color: #E5E7EB;
+    --logo-background: #0000008e;
+    --valid-input: #4fe24d;
+    --invalid-input: #e71818;
+    --shadow-box-color: #dcdcdc;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    display: flex; 
+    min-height: 100vh;   
+}
+
+.image-banner {
+    width: 40vw;
+    background-image: url("./images/image.avif");
+    background-size: cover;
+    position: relative;
+}
+
+.logo-container {
+    width: 100%;
+    position: absolute;
+    top: 120px;
+    padding: 10px 0;
+    background-color: var(--logo-background);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.odin {
+    font-size: 7vw;
+    font-family: Norse-Bold, sans-serif;
+    color: var(--border-color);
+}
+
+.logo {
+    width: 7vw;
+}
+
+.image-source {
+    font-size: 0.7rem;
+    text-align: center;
+    color: var(--border-color);
+    width: 100%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.author,
+.unsplash {
+    color: var(--border-color);
+}
+
+.author:hover,
+.unsplash:hover {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.sign-up-container {
+    width: 60vw;
+    font-size: 1.3rem;
+    line-height: 1.8rem;
+    word-spacing: 0.1rem;
+    font-weight: bold;
+    padding: 50px;
+}
+
+.info > p {
+    margin-bottom: 30px;
+}
+
+.form-container {
+    margin-top: 80px;
+}
+
+.input-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+input {
+    width: 300px;
+    border: 1px solid var(--border-color);
+}
+
+label,
+#password-confirmation {
+    font-size: 0.7rem;
+    display: block;
+}
+
+label {
+    margin-bottom: -10px;
+}
+
+.button-container {
+    padding-top: 20px;
+}
+
+button {
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: var(--button-color);
+    color: var(--border-color);
+    padding: 12px 38px;
+    border: none;
+    border-radius: 12px;
+}
+
+button:hover {
+    background-color: var(--button-secondary-color);
+}
+
+input:invalid {
+    border-color: red;
+}
+
+input:valid {
+    border-color: green;
+}
+
+.sign-in {
+    padding-top: 20px;
+    font-size: 1rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--button-color);
+}
+
+a:visited {
+    text-decoration: none;
+}
+a:hover {
+    color: var(--button-secondary-color);
+}
