@@ -112,8 +112,12 @@ label {
     margin-bottom: -10px;
 }
 
+#password-confirmation {
+    position: absolute;
+}
+
 .button-container {
-    padding-top: 20px;
+    padding-top: 30px;
 }
 
 button {
@@ -139,7 +143,7 @@ input:valid {
 }
 
 .sign-in {
-    padding-top: 20px;
+    padding-top: 10px;
     font-size: 1rem;
 }
 

@@ -7,9 +7,11 @@ function checkPassword() {
     if (password.value !== confirmPassword.value) {
         passwordAlert.textContent = "*Passwords don't match";
         passwordAlert.style.color = "red";
+        confirmPassword.style.borderColor = "red";
         submitButton.disabled = true;
     } else {
         passwordAlert.textContent = "";
+        confirmPassword.style.borderColor = "green";
         submitButton.disabled = false;
     }
 }
