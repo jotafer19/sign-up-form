@@ -166,7 +166,7 @@ a:hover {
     color: var(--button-secondary-color);
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 600px) {
     body {
         width: 100%;
         overflow: visible;
@@ -179,7 +179,7 @@ a:hover {
 
     .image-banner {
         width: 100%;
-        height: 20vh;
+        height: 20vw;
         padding: 0;
         margin: 0;
         display: flex;
@@ -198,7 +198,7 @@ a:hover {
     }
 
     .logo {
-        width: max(3.5rem, 10vw);
+        width: max(3.5rem ,10vw);
     }
 
     .image-source {
