@@ -106,6 +106,7 @@ body {
 input {
     width: 300px;
     border: 1px solid var(--border-color);
+    box-shadow: 2px 2px 1px 1px var(--shadow-box-color);
 }
 
 label,
